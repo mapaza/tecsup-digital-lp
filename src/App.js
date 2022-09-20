@@ -14,6 +14,7 @@ import UserPage from "./pages/UserPage";
 import Navbar from "./components/Navbar";
 import NotFoundPage from "./pages/NotFoundPage";
 import Header from "./components/Header";
+import FirstSection from "./components/FirstSection";
 
 export default function App() {
   return (
@@ -30,6 +31,9 @@ export default function App() {
               }}
             >
               </div>
+              <FirstSection />
+              
+              
       <Switch>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
