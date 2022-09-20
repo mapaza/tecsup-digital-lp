@@ -37,16 +37,7 @@ function Contact({ onSubmit, textButton, ...props }) {
         <input ref={register({ required: true })} placeholder="Apellidos" autoComplete="off" type="text" name="apellidos" id="apellidos" className="input" />
       </div>
       <div className="inline">
-        <select ref={register({ required: true })} placeholder="Ciudad" name="ciudad" id="ciudad" className="input">
-          {cities.map((city) => (
-            <option
-              key={city.idCiudad}
-              value={city.idCiudad}
-            >
-              {city.nombreCiudad}
-            </option>
-          ))}
-        </select>
+       
         <input ref={register({ required: true })} placeholder="Compañia" autoComplete="off" type="text" name="compania" id="compania" className="input" />
       </div>
       <div className="inline">

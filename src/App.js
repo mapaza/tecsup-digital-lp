@@ -43,18 +43,8 @@ export default function App() {
        <LoaderContext>
         <Router>
             <Header/>  
-            <div
-              style={{
-                opacity: 0,
-                zIndex: -1,
-                overflow: "hidden",
-                width: 1,
-                height: 1,
-                position: "absolute",
-              }}
-            >
-              
-            </div>         
+        
+                   
             <Switch>
               <Route exact path="/" component={SectionsWrapper} />
               <Route path="/servicios" component={Services} />
