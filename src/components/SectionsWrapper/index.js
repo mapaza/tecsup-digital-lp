@@ -3,6 +3,8 @@ import React, { useRef } from 'react'
 
 import FirstSection from '../FirstSection'
 import SecondSection from '../SecondSection'
+import ThirdSection from '../ThirdSection'
+import FourthSection from '../FourthSection'
 
 import { Container } from './styles'
 
@@ -82,7 +84,8 @@ export default function SectionsWrapper() {
 
         <FirstSection />
         <SecondSection ref={intersectedView} />
-
+        <ThirdSection />
+        <FourthSection ref={intersectedView2} />
       </Container>
 
     </div>
