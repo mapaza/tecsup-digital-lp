@@ -17,10 +17,12 @@ import Header from "./components/Header";
 import FirstSection from "./components/FirstSection";
 import { Main } from "./styles/styles";
 import GlobalStyles from "./styles/GlobalStyles";
+import LoaderContext from "./components/Loader/LoaderContext";
 
 export default function App() {
   return (
     <Main>
+       <LoaderContext>
         <Router>
             <Header/>           
             <Switch>
@@ -29,6 +31,7 @@ export default function App() {
             </Switch>
             <GlobalStyles />
         </Router>
+        </LoaderContext>
        </Main>
   );
 }

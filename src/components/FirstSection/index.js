@@ -93,7 +93,9 @@ function FirstSection() {
 
   const { progress } = useProgress()
 
-  const canAnimate = progress === 100
+  /* const canAnimate = progress === 100 */
+  const canAnimate = true
+ 
 
   return (
     <Container id="first">
