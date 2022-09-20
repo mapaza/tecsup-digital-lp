@@ -3,34 +3,38 @@ import {
   Redirect,
   Route,
   Routes,
+  Switch
 } from "react-router-dom";
+import React, { Component }  from 'react';
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import UsersPage from "./pages/UsersPage";
 import UserPage from "./pages/UserPage";
 import Navbar from "./components/Navbar";
-import DashboardPage from "./pages/DashboardPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import Header from "./components/Header";
 
 export default function App() {
   return (
     <Router>
-      <Header />
-
-      <Routes>
+      <Header/>
+      <div
+              style={{
+                opacity: 0,
+                zIndex: -1,
+                overflow: "hidden",
+                width: 1,
+                height: 1,
+                position: "absolute",
+              }}
+            >
+              </div>
+      <Switch>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/users/*" element={<UserPage />} />
-        <Route path="/users" element={<UsersPage />} />
-        <Route path="/myusers/" element={<Redirect replace to="/users" />} />
-        <Route path="/users/:id" element={<UserPage />} />
-        <Route path="/dashboard/*" element={<DashboardPage />}>
-          <Route path="welcome" element={<p>Welcome!</p>} />
-        </Route>
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+       
+      </Switch>
     </Router>
   );
 }
