@@ -17,7 +17,6 @@ import Header from "./components/Header";
 import FirstSection from "./components/FirstSection";
 import { Main } from "./styles/styles";
 import GlobalStyles from "./styles/GlobalStyles";
-import Loader from "./components/Loader";
 import LoaderContext from "./components/Loader/LoaderContext";
 import SectionsWrapper from "./components/SectionsWrapper";
 import TransformacionDigital from "./components/Services/TransformacionDigital"
@@ -38,17 +37,7 @@ import modelBomba from "./assets/hidrociclon2/hidrociclon.glb";
 import modelHidrociclon from "./assets/turbine/bomba.glb";
 
 export default function App() {
-
-  const mesh = useRef(null);
-  const mesh2 = useRef(null);
-
-  // console.log(location);
-
-  useEffect(() => {
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
-  }, []);
+  
   return (
     <Main>
        <LoaderContext>
@@ -64,12 +53,7 @@ export default function App() {
                 position: "absolute",
               }}
             >
-              {window.location.pathname !== "/" && (
-                <BoxModel mesh={mesh} pathModel={modelHidrociclon} />
-              )}
-              {window.location.pathname !== "/" && (
-                <BoxModel mesh={mesh2} pathModel={modelBomba} />
-              )}
+              
             </div>         
             <Switch>
               <Route exact path="/" component={SectionsWrapper} />
