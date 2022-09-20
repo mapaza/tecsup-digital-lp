@@ -118,7 +118,7 @@ export const ModelWrapper = styled.div`
   z-index: 20;
   position: absolute;
 
-  height: 55%;
+  height: 44%;
   display: block;
   top: 10%;
   width: 100vw;
@@ -126,7 +126,7 @@ export const ModelWrapper = styled.div`
 
   /* Large Devices, Wide Screens */
   @media only screen and (min-width : 1200px) {
-    height: 55%;
+    height: 44%;
     left: -5vw;
     display: block;
     top: 5%;

@@ -30,6 +30,7 @@ import AnalisisCienciaDatos from "./components/Services/AnalisisCienciaDatos"
 import DataScience from "./components/Services/AnalisisCienciaDatos/DataScience"
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Cases from "./components/Cases";
 import NotFound from "./components/NotFound";
 import BoxModel from "./components/FirstSection/BoxModel";
 
@@ -73,6 +74,7 @@ export default function App() {
             <Switch>
               <Route exact path="/" component={SectionsWrapper} />
               <Route path="/servicios" component={Services} />
+              <Route path="/casos" component={Cases} />
               <Route path="/contacto" component={Contact} />
               <Route component={NotFound} />
             </Switch>
