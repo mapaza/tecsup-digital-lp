@@ -18,6 +18,7 @@ import FirstSection from "./components/FirstSection";
 import { Main } from "./styles/styles";
 import GlobalStyles from "./styles/GlobalStyles";
 import LoaderContext from "./components/Loader/LoaderContext";
+import SectionsWrapper from "./components/SectionsWrapper";
 
 export default function App() {
   return (
@@ -26,7 +27,7 @@ export default function App() {
         <Router>
             <Header/>           
             <Switch>
-              <Route exact path="/" component={HomePage} />
+              <Route exact path="/" component={SectionsWrapper} />
               <Route path="/contact" component={AboutPage} />
             </Switch>
             <GlobalStyles />
