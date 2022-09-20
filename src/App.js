@@ -17,6 +17,7 @@ import Header from "./components/Header";
 import FirstSection from "./components/FirstSection";
 import { Main } from "./styles/styles";
 import GlobalStyles from "./styles/GlobalStyles";
+import Loader from "./components/Loader";
 import LoaderContext from "./components/Loader/LoaderContext";
 import SectionsWrapper from "./components/SectionsWrapper";
 import TransformacionDigital from "./components/Services/TransformacionDigital"
@@ -75,6 +76,7 @@ export default function App() {
               <Route path="/contacto" component={Contact} />
               <Route component={NotFound} />
             </Switch>
+            <Loader />
             <GlobalStyles />
         </Router>
         </LoaderContext>

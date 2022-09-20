@@ -61,7 +61,6 @@ export default function Loader() {
   // }, [counter, isIndex, isMounted]);
 
   const isLoading = !(progress === 100);
-  console.log("isLoading------")
 
   useEffect(() => {
     window.document.body.style.overflowY = !isLoading ? "auto" : "hidden"
