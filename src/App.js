@@ -5,7 +5,7 @@ import {
   Routes,
   Switch
 } from "react-router-dom";
-import React, { Component }  from 'react';
+import React, { Component, useRef,useEffect }  from 'react';
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -27,49 +27,53 @@ import DigitalizacionProcesos from "./components/Services/DigitalizacionProcesos
 import LaboratoriosWeb from "./components/Services//DigitalizacionProcesos/LaboratoriosWeb"
 import AnalisisCienciaDatos from "./components/Services/AnalisisCienciaDatos"
 import DataScience from "./components/Services/AnalisisCienciaDatos/DataScience"
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
+import BoxModel from "./components/FirstSection/BoxModel";
+
+import modelBomba from "./assets/hidrociclon2/hidrociclon.glb";
+import modelHidrociclon from "./assets/turbine/bomba.glb";
 
 export default function App() {
+
+  const mesh = useRef(null);
+  const mesh2 = useRef(null);
+
+  // console.log(location);
+
+  useEffect(() => {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  }, []);
   return (
     <Main>
        <LoaderContext>
         <Router>
-            <Header/>           
+            <Header/>  
+            <div
+              style={{
+                opacity: 0,
+                zIndex: -1,
+                overflow: "hidden",
+                width: 1,
+                height: 1,
+                position: "absolute",
+              }}
+            >
+              {window.location.pathname !== "/" && (
+                <BoxModel mesh={mesh} pathModel={modelHidrociclon} />
+              )}
+              {window.location.pathname !== "/" && (
+                <BoxModel mesh={mesh2} pathModel={modelBomba} />
+              )}
+            </div>         
             <Switch>
               <Route exact path="/" component={SectionsWrapper} />
-              <Route
-        path="/servicios/transformacion-digital"
-        component={TransformacionDigital}
-      />
-      <Route
-        path="/servicios/gestion-del-conocimiento"
-        component={GestionConocimiento}
-      />
-      {/* ------ Inicio Gestion Conocimiento ------ */}
-      <Route
-        path="/servicios/plataforma-de-gestión-del-conocimiento-industrial-4-0"
-        component={Plataforma4}
-      />
-      <Route
-        path="/servicios/instructivos-de-mantenimiento-con-realidad-aumentada"
-        component={InstructivosRA}
-      />
-      {/* ------ Fin Gestion Conocimiento ------ */}
-      <Route
-        path="/servicios/digitalizacion-de-procesos"
-        component={DigitalizacionProcesos}
-      />
-
-      {/* ------ digitalizacion-de-procesos ------ */}
-      <Route path="/servicios/laboratorios-web" component={LaboratoriosWeb} />
-      {/* ------ Fin digitalizacion-de-procesos ------ */}
-
-      <Route
-        path="/servicios/analitica-y-ciencia-de-datos"
-        component={AnalisisCienciaDatos}
-      />
-      {/* ------ Inicio Analitica y ciencia de datos ------ */}
-      <Route path="/servicios/data-science" component={DataScience} />
-      {/* ------ Fin Gestion Analitica y ciencia de datos ------ */}
+              <Route path="/servicios" component={Services} />
+              <Route path="/contacto" component={Contact} />
+              <Route component={NotFound} />
             </Switch>
             <GlobalStyles />
         </Router>

@@ -50,7 +50,7 @@ export const Subtitle = styled(motion.p)`
 export const OverlayBody = styled.div`
   position: absolute;
   width: 100%;
-    top: 50%;
+    top: 35%;
   padding-left: 5vw;
   z-index: 15;
   user-select: none;

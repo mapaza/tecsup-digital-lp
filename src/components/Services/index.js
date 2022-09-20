@@ -32,6 +32,7 @@ const Services = () => {
   contact.style.color = "white";
   circle.style.color = "black";
   img.style.filter = "invert(0%)";
+  console.log("jjjjjjjjjjjjjjjjserv")
 
   useEffect(() => {
     switch (location.pathname) {
