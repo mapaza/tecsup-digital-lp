@@ -12,11 +12,12 @@ import UserPage from "./pages/UserPage";
 import Navbar from "./components/Navbar";
 import DashboardPage from "./pages/DashboardPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <Router>
-      <Navbar />
+      <Header />
 
       <Routes>
         <Route path="/" element={<HomePage />} />
