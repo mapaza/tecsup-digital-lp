@@ -15,30 +15,20 @@ import Navbar from "./components/Navbar";
 import NotFoundPage from "./pages/NotFoundPage";
 import Header from "./components/Header";
 import FirstSection from "./components/FirstSection";
+import { Main } from "./styles/styles";
+import GlobalStyles from "./styles/GlobalStyles";
 
 export default function App() {
   return (
-    <Router>
-      <Header/>
-      <div
-              style={{
-                opacity: 0,
-                zIndex: -1,
-                overflow: "hidden",
-                width: 1,
-                height: 1,
-                position: "absolute",
-              }}
-            >
-              </div>
-              <FirstSection />
-              
-              
-      <Switch>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-       
-      </Switch>
-    </Router>
+    <Main>
+        <Router>
+            <Header/>           
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/contact" component={AboutPage} />
+            </Switch>
+            <GlobalStyles />
+        </Router>
+       </Main>
   );
 }
