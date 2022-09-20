@@ -78,7 +78,7 @@ export default function App() {
               <Route path="/contacto" component={Contact} />
               <Route component={NotFound} />
             </Switch>
-            <Loader />
+            
             <GlobalStyles />
         </Router>
         </LoaderContext>
