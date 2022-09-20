@@ -1,6 +1,6 @@
 import {
   BrowserRouter as Router,
-  Navigate,
+  Redirect,
   Route,
   Routes,
 } from "react-router-dom";
@@ -24,7 +24,7 @@ export default function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/users/*" element={<UserPage />} />
         <Route path="/users" element={<UsersPage />} />
-        <Route path="/myusers/" element={<Navigate replace to="/users" />} />
+        <Route path="/myusers/" element={<Redirect replace to="/users" />} />
         <Route path="/users/:id" element={<UserPage />} />
         <Route path="/dashboard/*" element={<DashboardPage />}>
           <Route path="welcome" element={<p>Welcome!</p>} />
