@@ -22,13 +22,14 @@ function makeNav(color = "white") {
     circle.style.background = "white"
     circle.style.color = "black"
     contact.style.color = "white"
-    img.style.filter = "invert(0%)"
+    /* img.style.filter = "invert(0%)" */
+    img.src="https://res.cloudinary.com/tecdigital/image/upload/v1663714524/logo-eduverso-blanco_hlrio1.png"
   } else {
     navbar.style.color = "black";
     circle.style.background = "rgba(0,0,0,1)"
     circle.style.color = "white"
     contact.style.color = "black"
-    img.style.filter = "invert(100%)"
+    img.src="https://res.cloudinary.com/tecdigital/image/upload/v1663560910/logo-eduverso_navcyr.png"
   }
 }
 

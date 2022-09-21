@@ -125,7 +125,7 @@ function FirstSection() {
             Menos del 1% de la información de una empresa es analizada y convertida en beneficios. ¿Por que no hacemos algo al respecto? Toma la delantera con tu empresa y obtén innumerables beneficios al transformarla digitalmente
           </Subtitle>
           <div className="button-circle-container">
-            <Link to="/transformacion-digital">
+            <Link to="/video">
               <ButtonCircle canAnimate={canAnimate} >
                 COMENZAR AHORA
               </ButtonCircle>

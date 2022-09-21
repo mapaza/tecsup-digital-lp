@@ -33,6 +33,7 @@ import Contact from "./components/Contact";
 import Cases from "./components/Cases";
 import NotFound from "./components/NotFound";
 import BoxModel from "./components/FirstSection/BoxModel";
+import VideoPlayer from "./components/VideoPlayer";
 
 import modelBomba from "./assets/hidrociclon2/hidrociclon.glb";
 import modelHidrociclon from "./assets/turbine/bomba.glb";
@@ -76,6 +77,7 @@ export default function App() {
               <Route path="/servicios" component={Services} />
               <Route path="/casos" component={Cases} />
               <Route path="/contacto" component={Contact} />
+              <Route path="/video" component={VideoPlayer} />
               <Route component={NotFound} />
             </Switch>
             <Loader />

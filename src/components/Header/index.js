@@ -48,7 +48,7 @@ function Header() {
       <Container id="navbar">
         <Nav>
           <div>
-            <img alt="Logo Tecsup" src="https://res.cloudinary.com/tecdigital/image/upload/v1663561112/logo-eduverso-invertido_qgm72s.png" />
+            <img alt="Logo Tecsup" src="https://res.cloudinary.com/tecdigital/image/upload/v1663714524/logo-eduverso-blanco_hlrio1.png" />
             <span className="separator">
               |
             </span>

@@ -31,7 +31,10 @@ const Services = () => {
   circle.style.background = "white";
   contact.style.color = "white";
   circle.style.color = "black";
-  img.style.filter = "invert(0%)";
+  // img.style.filter = "invert(0%)";
+  img.src="https://res.cloudinary.com/tecdigital/image/upload/v1663714524/logo-eduverso-blanco_hlrio1.png"
+
+  
   console.log("jjjjjjjjjjjjjjjjserv")
 
   useEffect(() => {
