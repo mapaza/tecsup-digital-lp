@@ -195,8 +195,74 @@ export const IconsLayer = styled.div`
   }
   a{
     text-align: -webkit-center;
-    width:42vh;
+    width:26vh;
   }
+
+  .tags {
+    display: inline;
+    position: relative;
+  }
+  
+  .tags:hover:after {
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: -10vh;
+    color: #fff;
+    content: attr(gloss);
+    left: -71%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 38vh;
+    font-size: 2.6vh;
+    font-weight: 600;
+  }
+  
+  .tags:hover:before {
+    border: solid;
+    border-color: #333333bf transparent;
+    border-width: 0px 15px 15px 15px;
+    bottom: -23px;
+    content: "";
+    left: -26%;
+    position: absolute;
+    z-index: 99;
+  }
+  .servicio3:hover:after {
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: -13vh;
+    color: #fff;
+    content: attr(gloss);
+    left: -71%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 38vh;
+    font-size: 2.6vh;
+    font-weight: 600;
+  }
+
+  .servicio4:hover:after {
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: -7vh;
+    color: #fff;
+    content: attr(gloss);
+    left: -71%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 38vh;
+    font-size: 2.6vh;
+    font-weight: 600;
+  }
+
+
+
  
 `;
 

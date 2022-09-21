@@ -44,7 +44,43 @@ function SecondSection(props, ref) {
               </ButtonCircle>
             </Link> 
           </div> */}
-          <IconsLayer style={{marginTop:'1vh'}}>
+          <IconsLayer style={{marginTop:'5vh'}}>
+
+          <Link to="/servicios/transformacion-digital">
+          <a className="tags" gloss="Capacitación y Entrenamiento Inmersivo">
+            <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
+              <TransformacionDigitalSVG />
+            </div>
+            </a>
+         
+          </Link>
+
+          <Link to="/servicios/gestion-del-conocimiento">
+          <a className="tags" gloss="Instructivos para Operaciones y Mantenimiento">
+            <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
+              <GestionConocimientoSVG />
+            </div>
+            </a>
+          </Link>
+
+          <Link to="/servicios/digitalizacion-de-procesos">
+          <a className="tags servicio3" gloss="Monitoreo de condiciones y visualización de datos operativos">
+           <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
+              <DigitalizacionProcesosSVG />
+            </div>
+            </a>
+          </Link>
+         
+          <Link to="/servicios/analitica-y-ciencia-de-datos">
+          <a className="tags servicio4" gloss="Educación extendida">
+           <div className="circle" style={{ width: '90px', height:'90px', marginRight:'2.5vh'}} >
+              <CienciaDatosSVG />
+            </div>
+            </a>
+          </Link>
+        </IconsLayer>
+
+ {/*        <IconsLayer style={{marginTop:'1vh'}}>
           <Link to="/servicios/transformacion-digital">
           <div className="servicio-titulo">Capacitación y Entrenamiento Inmersivo</div>
             <div className="circle" style={{border: '3px solid black', width: '90px', height:'90px', marginRight:'2.5vh'}} >
@@ -58,7 +94,7 @@ function SecondSection(props, ref) {
             </div>
           </Link>
           <Link to="/servicios/digitalizacion-de-procesos">
-            <div className="servicio-titulo">Monitoreo de condiciones y visualización de datos operativos</div>
+            <div className="servicio-titulo"></div>
            <div className="circle" style={{border: '3px solid black', width: '90px', height:'90px', marginRight:'2.5vh'}} >
               <DigitalizacionProcesosSVG />
             </div>
@@ -70,7 +106,8 @@ function SecondSection(props, ref) {
               <CienciaDatosSVG />
             </div>
           </Link>
-        </IconsLayer>
+        </IconsLayer> */}
+          
           
         </OverlayBody>
 
