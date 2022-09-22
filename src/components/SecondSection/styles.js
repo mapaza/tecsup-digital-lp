@@ -109,6 +109,45 @@ export const Container = styled.div`
   /* scroll-snap-align: start; */
   position: relative;
   background: white;
+  
+  .svg{
+    width: 100%;
+    height: 20vh;
+    bottom: -34px;
+    z-index: 100;
+    position: absolute;
+
+
+    /* Galaxy Fold */ 
+    @media only screen and (min-width : 280px) {
+      height: 10vh;
+    }
+  
+    /* Custom, iPhone Retina, Iphone SE*/ 
+    @media only screen and (min-width : 320px) {
+      height: 10vh;
+    }
+  
+    /* Extra Small Devices, Phones, Surface Duo */ 
+    @media only screen and (min-width : 480px) {
+      height: 10vh;
+    }
+  
+    /* Small Devices, Tablets, IPAD Air */
+    @media only screen and (min-width : 768px) {
+      height: 10vh;
+    }
+  
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      height: 20vh;
+   }
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      height: 20vh;
+    }
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -353,7 +392,7 @@ export const IconsLayer = styled.div`
   
     /* Custom, iPhone Retina, Iphone SE*/ 
     @media only screen and (min-width : 320px) {
-      width:14%;
+      width:17%;
     }
   
     /* Extra Small Devices, Phones, Surface Duo */ 

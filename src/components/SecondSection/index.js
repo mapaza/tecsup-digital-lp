@@ -129,7 +129,7 @@ function SecondSection(props, ref) {
             src="https://res.cloudinary.com/tecsup-tasa/image/upload/v1618352338/landingpage/Dise%C3%B1o_sin_t%C3%ADtulo_3_-min_1_o4fdb3.png"
           />
         </ImageContainer>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
+       {/*  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
           style={{
             width: '100%',
             height: '20vh',
@@ -137,6 +137,10 @@ function SecondSection(props, ref) {
             zIndex: '100',
             position: 'absolute',
           }}>
+          <polygon fill="#0E0E0F" points="0,100 100,0 100,100" />
+        </svg> */}
+        <svg className='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
+         >
           <polygon fill="#0E0E0F" points="0,100 100,0 100,100" />
         </svg>
       </StickyContainer>
