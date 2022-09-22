@@ -69,38 +69,38 @@ export const SubService = styled.div`
 
     /* Galaxy Fold */ 
     @media only screen and (min-width : 280px) {
-      font-size: 2vh;
-      line-height: 3vh;
+      font-size: 5vh;
+      line-height: 7vh;
     }
   
     /* Custom, iPhone Retina, Iphone SE*/ 
     @media only screen and (min-width : 320px) {
-      font-size: 3vh;
-      line-height: 4vh;
+      font-size: 7vh;
+      line-height: 9vh;
     }
   
     /* Extra Small Devices, Phones, Surface Duo */ 
     @media only screen and (min-width : 480px) {
-      font-size: 3vh;
-      line-height: 4vh;
+      font-size: 7vh;
+      line-height: 9vh;
     }
   
     /* Small Devices, Tablets, IPAD Air */
     @media only screen and (min-width : 768px) {
-      font-size: 2vh;
-      line-height: 3vh;
+      font-size: 8vh;
+      line-height: 9vh;
     }
   
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-      font-size: 3vh;
-      line-height: 4vh;
+      font-size: 11vh;
+      line-height: 12vh;
    }
   
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-      font-size: 3vh;
-      line-height: 4vh;
+      font-size: 11vh;
+      line-height: 12vh;
     }
 
   }
@@ -115,38 +115,38 @@ export const SubService = styled.div`
 
     /* Galaxy Fold */ 
     @media only screen and (min-width : 280px) {
-      font-size: 2vh;
-      line-height: 3vh;
+      font-size: 3vh;
+      line-height: 4vh;
     }
   
     /* Custom, iPhone Retina, Iphone SE*/ 
     @media only screen and (min-width : 320px) {
-      font-size: 3vh;
-      line-height: 4vh;
+      font-size: 4vh;
+      line-height: 5vh;
     }
   
     /* Extra Small Devices, Phones, Surface Duo */ 
     @media only screen and (min-width : 480px) {
-      font-size: 3vh;
-      line-height: 4vh;
+      font-size: 4vh;
+      line-height: 5vh;
     }
   
     /* Small Devices, Tablets, IPAD Air */
     @media only screen and (min-width : 768px) {
-      font-size: 2vh;
-      line-height: 3vh;
+      font-size: 4vh;
+      line-height: 5vh;
     }
   
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-      font-size: 3vh;
-      line-height: 4vh;
+      font-size: 4vh;
+      line-height: 5vh;
    }
   
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-      font-size: 3vh;
-      line-height: 4vh;
+      font-size: 5vh;
+      line-height: 6vh;
     }
 
    
