@@ -66,6 +66,43 @@ export const SubService = styled.div`
     line-height: 98px;
     -webkit-text-stroke: 1px #fff; 
     -webkit-text-fill-color: transparent;
+
+    /* Galaxy Fold */ 
+    @media only screen and (min-width : 280px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
+  
+    /* Custom, iPhone Retina, Iphone SE*/ 
+    @media only screen and (min-width : 320px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Extra Small Devices, Phones, Surface Duo */ 
+    @media only screen and (min-width : 480px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Small Devices, Tablets, IPAD Air */
+    @media only screen and (min-width : 768px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
+  
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      font-size: 3vh;
+      line-height: 4vh;
+   }
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+
   }
 
   .title {
@@ -76,10 +113,43 @@ export const SubService = styled.div`
     font-weight: 700;
     margin-bottom:3vh;
 
-    @media only screen and (min-width : 992px) {
-      font-size: 36px;
-      line-height: 42px;
+    /* Galaxy Fold */ 
+    @media only screen and (min-width : 280px) {
+      font-size: 2vh;
+      line-height: 3vh;
     }
+  
+    /* Custom, iPhone Retina, Iphone SE*/ 
+    @media only screen and (min-width : 320px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Extra Small Devices, Phones, Surface Duo */ 
+    @media only screen and (min-width : 480px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Small Devices, Tablets, IPAD Air */
+    @media only screen and (min-width : 768px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
+  
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      font-size: 3vh;
+      line-height: 4vh;
+   }
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+
+   
   }
 
   p{
@@ -89,7 +159,38 @@ export const SubService = styled.div`
     line-height: 130%;
     font-weight: 300;
 
+    /* Galaxy Fold */ 
+    @media only screen and (min-width : 280px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
+  
+    /* Custom, iPhone Retina, Iphone SE*/ 
+    @media only screen and (min-width : 320px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Extra Small Devices, Phones, Surface Duo */ 
+    @media only screen and (min-width : 480px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Small Devices, Tablets, IPAD Air */
+    @media only screen and (min-width : 768px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
+  
+    /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
+      font-size: 3vh;
+      line-height: 4vh;
+   }
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
       font-size: 3vh;
       line-height: 4vh;
     }
@@ -97,6 +198,41 @@ export const SubService = styled.div`
   ul{
     font-size: 3vh;
     line-height: 4vh;
+    /* Galaxy Fold */ 
+    @media only screen and (min-width : 280px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
+  
+    /* Custom, iPhone Retina, Iphone SE*/ 
+    @media only screen and (min-width : 320px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Extra Small Devices, Phones, Surface Duo */ 
+    @media only screen and (min-width : 480px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Small Devices, Tablets, IPAD Air */
+    @media only screen and (min-width : 768px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
+  
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      font-size: 3vh;
+      line-height: 4vh;
+   }
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
   }
  
  
@@ -109,6 +245,30 @@ export const Subtitle = styled(motion.p)`
   margin-top: 1vw;
   font-size: 100%; 
   line-height: 130%;
+
+  /* Galaxy Fold */ 
+    @media only screen and (min-width : 280px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
+  
+    /* Custom, iPhone Retina, Iphone SE*/ 
+    @media only screen and (min-width : 320px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Extra Small Devices, Phones, Surface Duo */ 
+    @media only screen and (min-width : 480px) {
+      font-size: 3vh;
+      line-height: 4vh;
+    }
+  
+    /* Small Devices, Tablets, IPAD Air */
+    @media only screen and (min-width : 768px) {
+      font-size: 2vh;
+      line-height: 3vh;
+    }
 
 
    /* Medium Devices, Desktops */

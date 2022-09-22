@@ -24,19 +24,67 @@ const Services = () => {
   });
   const history = useHistory();
   const location = useLocation();
-
+/* 
   const navbar = document.querySelector("#navbar");
   const circle = document.querySelector("#navbar .circle");
   const contact = document.querySelector("#navbar .contact");
   const img = document.querySelector("#navbar img");
-  /* navbar.style.color = "white"; */
+  navbar.style.color = "white"; 
+  circle.style.background = "white";
+  contact.style.color = "white";
+  circle.style.color = "black"; */
+  
  /*  circle.style.background = "white";
   contact.style.color = "white";
   circle.style.color = "black";
   // img.style.filter = "invert(0%)";*/
-  img.src="https://res.cloudinary.com/tecdigital/image/upload/v1663714524/logo-eduverso-blanco_hlrio1.png"
  
+ /*  img.src="https://res.cloudinary.com/tecdigital/image/upload/v1663714524/logo-eduverso-blanco_hlrio1.png"
+  */
+
+var img = {
+  src: "",
+  };
+var navbar = {
+    style: {
+      color:"",
+      background:""
+    }
+};
+var circle = {
+    style: {
+      color:"",
+      background:""
+    }
+};
+var contact = {
+  style: {
+    color:"",
+    background:""
+  }
+};
+
+if(document.querySelector("#navbar img")){
+  img = document.querySelector("#navbar img")
+}
+img.src="https://res.cloudinary.com/tecdigital/image/upload/v1663714524/logo-eduverso-blanco_hlrio1.png"
+
+if(document.querySelector("#navbar")){
+  navbar = document.querySelector("#navbar")
+}
+navbar.style.color = "white"; 
   
+if(document.querySelector("#navbar .circle")){
+  circle =document.querySelector("#navbar .circle")
+}
+circle.style.background = "white";
+circle.style.color = "black"; 
+
+if(document.querySelector("#navbar .contact")){
+  contact = document.querySelector("#navbar .contact")
+}
+contact.style.color = "white";
+
   console.log("jjjjjjjjjjjjjjjjserv")
 
   useEffect(() => {

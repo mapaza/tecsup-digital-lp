@@ -225,12 +225,12 @@ export const IconsLayer = styled.div`
   
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-      width:14%;
+      width:21%;
    }
   
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-      width:14%;
+      width:17%;
     }
   }
 

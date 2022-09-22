@@ -153,9 +153,37 @@ export const Content = styled.div`
     z-index: 1;
     display: none;
 
-    @media only screen and (min-width : 992px) {
+    /* Galaxy Fold */ 
+    @media only screen and (min-width : 280px) {
       display: flex;
     }
+  
+    /* Custom, iPhone Retina, Iphone SE*/ 
+    @media only screen and (min-width : 320px) {
+      display: flex;
+    }
+  
+    /* Extra Small Devices, Phones, Surface Duo */ 
+    @media only screen and (min-width : 480px) {
+      display: flex;
+    }
+  
+    /* Small Devices, Tablets, IPAD Air */
+    @media only screen and (min-width : 768px) {
+      display: flex;
+    }
+  
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      display: flex;
+   }
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      display: flex;
+    }
+
+   
     .circle{
       border: 0.01vw solid #30a0cc;
       width: 22vw;
