@@ -49,7 +49,7 @@ function SecondSection(props, ref) {
 
           <Link to="/servicios/capacitacion-y-entrenamiento-inmersivo">
           <a className="tags" gloss="Capacitación y Entrenamiento Inmersivo">
-            <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
+            <div className="circle" style={{width: '12vh', height:'12vh', marginRight:'2.5vh'}} >
               <TransformacionDigitalSVG />
             </div>
             </a>
@@ -58,7 +58,7 @@ function SecondSection(props, ref) {
 
           <Link to="/servicios/instructivos-para-operaciones-y-mantenimiento">
           <a className="tags" gloss="Instructivos para Operaciones y Mantenimiento">
-            <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
+            <div className="circle" style={{width: '12vh', height:'12vh', marginRight:'2.5vh'}} >
               <GestionConocimientoSVG />
             </div>
             </a>
@@ -66,7 +66,7 @@ function SecondSection(props, ref) {
 
           <Link to="/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos">
           <a className="tags servicio3" gloss="Monitoreo de condiciones y visualización de datos operativos">
-           <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
+           <div className="circle" style={{width: '12vh', height:'12vh', marginRight:'2.5vh'}} >
               <DigitalizacionProcesosSVG />
             </div>
             </a>
@@ -74,7 +74,7 @@ function SecondSection(props, ref) {
          
           <Link to="/servicios/educación-extendida">
           <a className="tags servicio4" gloss="Educación extendida">
-           <div className="circle" style={{ width: '90px', height:'90px', marginRight:'2.5vh'}} >
+           <div className="circle" style={{ width: '12vh', height:'12vh', marginRight:'2.5vh'}} >
               <EducacionExtendidaSVG />
             </div>
             </a>

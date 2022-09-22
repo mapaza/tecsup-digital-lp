@@ -21,46 +21,37 @@ const AnalisisCienciaDatos = () => {
         title="Instructivos para operaciones y mantenimiento"
         subtitle=""
       />
-      <Detail>
+       <Detail>
         <div className="left">
+       
+          
           <SubService>
-            
-            <p className='description'>
-            Desarrolla los instructivos que necesitas en tu organización para ayudar a mejorar las operaciones o mantenimientos internos. <br/> 
-Obtén guías a través de realidad aumentada y mixta.
+          <p className='description'>
+          Desarrolla los instructivos que necesitas en tu organización para ayudar a mejorar las operaciones o mantenimientos internos. 
+          Obtén guías a través de realidad aumentada y mixta.
+
           </p>
-           
-            <br/>
+          <br/>
             <p>Podrás Desarrollar:</p>
             <br/>
-            <ul>
-              <li>
-              <strong>Tutor Digital:</strong> Aplicativo que utiliza la RA y RM para entregar elementos altamente visuales e interactivos para presentar información digital relevante dentro de un contexto físico real.
-
-              </li>
-              <br/>
-              <li>
-              <strong>Asistencia Remota:</strong> Desarrollo de software de acceso remoto para dar al especialista/experto acceso instantáneo al dispositivo remoto desde cualquier lugar y en cualquier momento.
-
-              </li>
-              
-            </ul>
-
-            {/*
-             <ShowMore to="/servicios/plataforma-de-gestión-del-conocimiento-industrial-4-0">
-              Ver Más
-            </ShowMore> */}
-          </SubService>
-         {/*  <SubService>
-            <p className="number">02</p>
-            <p className="title">Instructivos de mantenimiento con realidad aumentada</p>
+            <p className="number">01</p>
+            <p className="title"> Tutor Digital</p>
             <p>
-              Esta aplicación permite al usuario ver objetos generados por ordenador dentro de su campo visual, y la posibilidad de interactuar en diferentes situaciones que mezclan lo material y lo artificial.
+            Aplicativo que utiliza la RA y RM para entregar elementos altamente visuales e interactivos para presentar información digital relevante dentro de un contexto físico real.
+
             </p>
-            <ShowMore to='/servicios/instructivos-de-mantenimiento-con-realidad-aumentada' >
-              Ver Más
-            </ShowMore>
-          </SubService> */}
+
+            
+          </SubService>
+          <SubService>
+            <p className="number">02</p>
+            <p className="title">Asistencia Remota</p>
+            <p>
+            Desarrollo de software de acceso remoto para dar al especialista/experto acceso instantáneo al dispositivo remoto desde cualquier lugar y en cualquier momento.
+
+            </p>
+           
+          </SubService>
         </div>
         <img className="img" alt="análisis y ciencia de datos" src={image} />
       </Detail>

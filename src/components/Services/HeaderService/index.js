@@ -55,7 +55,7 @@ function HeaderService({ title, subtitle }) {
             </div>
           </Link>
           <Link to="/servicios/instructivos-para-operaciones-y-mantenimiento">
-            <div className={`circle ${isActive("//servicios/instructivos-para-operaciones-y-mantenimiento") ? "active" : ""}` } style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+            <div className={`circle ${isActive("/servicios/instructivos-para-operaciones-y-mantenimiento") ? "active" : ""}` } style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
               <GestionConocimientoSVG />
             </div>
           </Link>
