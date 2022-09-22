@@ -1,13 +1,9 @@
-// const { default: styled } = require("styled-components");
-
-import styled from 'styled-components';
-
+import styled from 'styled-components'
 import { Title, Subtitle } from './../../FirstSection/styles'
 
 export const Container = styled.div`
-  position: relative;
-`;
-
+  padding-bottom: 30px;
+`
 
 export const Content = styled.div`
   padding-left: 5vw;
@@ -238,8 +234,8 @@ export const Content = styled.div`
         line-height: 140%;
         
         @media only screen and (min-width : 992px) {
-          line-height: 5vh;
-          font-size: 3.5vh;
+          line-height: 1.8vw;
+          font-size: 1.5vw;
         }
       }
       .get-demo{
@@ -253,5 +249,36 @@ export const Content = styled.div`
     to {
       transform: rotate(359deg);
     }
+  }
+`
+
+export const Body = styled.div`
+  padding-top: 90vh;
+
+  @media only screen and (min-width : 992px) {
+    padding-top: 70vh;
+    }
+`
+
+
+export const ImgContainer = styled.div`
+  /* filter: grayscale(100%); */
+  background: gray;
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:1;
+    background: rgba(0,0,0,0.5)
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `

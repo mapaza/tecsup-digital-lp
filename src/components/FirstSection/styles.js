@@ -8,8 +8,8 @@ import VideoHeader from './VideoHeader'
 export const Title = styled(motion.p)`
   color: white; 
   font-weight: 700; 
-  font-size: 10vw; 
-  line-height: 10.3vw;
+  font-size: 9vh; 
+  line-height: 11vh;
   .outline{
     /* -webkit-text-stroke: 1px #fff; */
     /* -webkit-text-fill-color: transparent; */
@@ -17,14 +17,14 @@ export const Title = styled(motion.p)`
 
   /* Medium Devices, Desktops */
   @media only screen and (min-width : 992px) {
-    font-size: 8vw; 
-    line-height: 8.3vw;
+    font-size: 9vh; 
+    line-height: 11vh;
   }
 
   /* Large Devices, Wide Screens */
   @media only screen and (min-width : 1200px) {
-    font-size: 6vw; 
-    line-height: 6.3vw;
+    font-size: 7vh; 
+    line-height: 9vh;
   }
 
 `
@@ -40,14 +40,14 @@ export const Subtitle = styled(motion.p)`
 
    /* Medium Devices, Desktops */
    @media only screen and (min-width : 992px) {
-    font-size: 120%; 
-    line-height: 150%;
+    font-size: 4vh; 
+    line-height: 5vh;
   }
 
   /* Large Devices, Wide Screens */
   @media only screen and (min-width : 1200px) {
-    font-size: 18px; 
-    line-height: 24px;
+    font-size: 3.2vh; 
+    line-height: 4.2vh;
   }
 
 `

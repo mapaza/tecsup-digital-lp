@@ -13,6 +13,8 @@ import DigitalizacionProcesos from "./DigitalizacionProcesos";
 import { Container } from "./styles";
 import BackgroundVideo from "../BackgroundVideo";
 import { useState } from "react";
+import MonitoreoCondiciones from "./MonitoreoCondiciones";
+import EducacionExtendida from "./EducacionExtendida";
 
 const Services = () => {
   // const location = useLocation()
@@ -27,22 +29,22 @@ const Services = () => {
   const circle = document.querySelector("#navbar .circle");
   const contact = document.querySelector("#navbar .contact");
   const img = document.querySelector("#navbar img");
-  navbar.style.color = "white";
-  circle.style.background = "white";
+  /* navbar.style.color = "white"; */
+ /*  circle.style.background = "white";
   contact.style.color = "white";
   circle.style.color = "black";
-  // img.style.filter = "invert(0%)";
+  // img.style.filter = "invert(0%)";*/
   img.src="https://res.cloudinary.com/tecdigital/image/upload/v1663714524/logo-eduverso-blanco_hlrio1.png"
-
+ 
   
   console.log("jjjjjjjjjjjjjjjjserv")
 
   useEffect(() => {
     switch (location.pathname) {
       case "/servicios":
-        return history.push("/servicios/transformacion-digital");
+        return history.push("/servicios/capacitacion-y-entrenamiento-inmersivo");
 
-      case "/servicios/transformacion-digital":
+      case "/servicios/capacitacion-y-entrenamiento-inmersivo":
         return setVideo({
           path:
             "https://res.cloudinary.com/dfxv7hzza/video/upload/v1602116955/Tecsup/0001.mp4",
@@ -50,7 +52,7 @@ const Services = () => {
             "https://res.cloudinary.com/dfxv7hzza/image/upload/v1602116820/Tecsup/thumb-001.jpg",
         });
 
-      case "/servicios/gestion-del-conocimiento":
+      case "/servicios/instructivos-para-operaciones-y-mantenimiento":
         return setVideo({
           path:
             "https://res.cloudinary.com/dfxv7hzza/video/upload/v1602456476/Tecsup/olas_hd.mp4",
@@ -58,7 +60,7 @@ const Services = () => {
             "https://res.cloudinary.com/dfxv7hzza/image/upload/v1602456698/Tecsup/thumb-video_002.png",
         });
 
-      case "/servicios/digitalizacion-de-procesos":
+      case "/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos":
         return setVideo({
           path:
             "https://res.cloudinary.com/dfxv7hzza/video/upload/v1602116866/Tecsup/0002.mp4",
@@ -66,7 +68,7 @@ const Services = () => {
             "https://res.cloudinary.com/dfxv7hzza/image/upload/v1602116823/Tecsup/thumb-002.jpg",
         });
 
-      case "/servicios/analitica-y-ciencia-de-datos":
+      case "/servicios/educación-extendida":
         return setVideo({
           path:
             "https://res.cloudinary.com/dfxv7hzza/video/upload/v1602116865/Tecsup/0003.mp4",
@@ -89,11 +91,11 @@ const Services = () => {
         />
       )}
       <Route
-        path="/servicios/transformacion-digital"
+        path="/servicios/capacitacion-y-entrenamiento-inmersivo"
         component={TransformacionDigital}
       />
       <Route
-        path="/servicios/gestion-del-conocimiento"
+        path="/servicios/instructivos-para-operaciones-y-mantenimiento"
         component={GestionConocimiento}
       />
       {/* ------ Inicio Gestion Conocimiento ------ */}
@@ -107,7 +109,7 @@ const Services = () => {
       />
       {/* ------ Fin Gestion Conocimiento ------ */}
       <Route
-        path="/servicios/digitalizacion-de-procesos"
+        path="/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos"
         component={DigitalizacionProcesos}
       />
 
@@ -120,8 +122,9 @@ const Services = () => {
         component={AnalisisCienciaDatos}
       />
       {/* ------ Inicio Analitica y ciencia de datos ------ */}
-      <Route path="/servicios/data-science" component={DataScience} />
+      <Route path="/servicios/educación-extendida" component={EducacionExtendida} />
       {/* ------ Fin Gestion Analitica y ciencia de datos ------ */}
+      
     </Container>
   );
 };

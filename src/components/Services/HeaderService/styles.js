@@ -81,9 +81,15 @@ export const IconsLayer = styled.div`
     justify-content: center;
     transition: 5s opacity;
   }
-  .active {
+  .circle:hover{
+    background:#03baed38;
     opacity: 1;
+
+  }
+  .active {
+    opacity: 0.8;
     cursor: default;
+    background:#03BAED;
   }
   a + a{
     margin-left: 10px;

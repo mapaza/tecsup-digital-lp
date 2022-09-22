@@ -18,6 +18,7 @@ import TransformacionDigitalSVG from '../Services/HeaderService/TransformacionDi
 import CienciaDatosSVG from '../Services/HeaderService/CienciaDatosSVG';
 import DigitalizacionProcesosSVG from '../Services/HeaderService/DigitalizacionProcesosSVG';
 import GestionConocimientoSVG from '../Services/HeaderService/GestionConocimientoSVG';
+import EducacionExtendidaSVG from '../Services/HeaderService/EducacionExtendidaSVG'
 
 function SecondSection(props, ref) {
   const meshRef = useRef(null);
@@ -33,7 +34,7 @@ function SecondSection(props, ref) {
             Nuestros Servicios
           </Title>
           <Subtitle exit={{ opacity: 0 }}>
-            Explore todas las soluciones y servicios de software para Transformación digital, Gestión del Conocimiento, Digitalización de Procesos, Analítica y Ciencia de Datos y más para potenciar su fuerza de trabajo y superar el ritmo de la innovación.
+          Capacita, instruye, monitorea y virtualiza la educación de tu organización. Suma innovación y tecnología para hacer más eficaces y eficientes la búsqueda de la potenciación de tus colaboradores.
           </Subtitle>
           
           {/*<div className="button-circle-container">
@@ -46,7 +47,7 @@ function SecondSection(props, ref) {
           </div> */}
           <IconsLayer style={{marginTop:'5vh'}}>
 
-          <Link to="/servicios/transformacion-digital">
+          <Link to="/servicios/capacitacion-y-entrenamiento-inmersivo">
           <a className="tags" gloss="Capacitación y Entrenamiento Inmersivo">
             <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
               <TransformacionDigitalSVG />
@@ -55,7 +56,7 @@ function SecondSection(props, ref) {
          
           </Link>
 
-          <Link to="/servicios/gestion-del-conocimiento">
+          <Link to="/servicios/instructivos-para-operaciones-y-mantenimiento">
           <a className="tags" gloss="Instructivos para Operaciones y Mantenimiento">
             <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
               <GestionConocimientoSVG />
@@ -63,7 +64,7 @@ function SecondSection(props, ref) {
             </a>
           </Link>
 
-          <Link to="/servicios/digitalizacion-de-procesos">
+          <Link to="/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos">
           <a className="tags servicio3" gloss="Monitoreo de condiciones y visualización de datos operativos">
            <div className="circle" style={{width: '90px', height:'90px', marginRight:'2.5vh'}} >
               <DigitalizacionProcesosSVG />
@@ -71,10 +72,10 @@ function SecondSection(props, ref) {
             </a>
           </Link>
          
-          <Link to="/servicios/analitica-y-ciencia-de-datos">
+          <Link to="/servicios/educación-extendida">
           <a className="tags servicio4" gloss="Educación extendida">
            <div className="circle" style={{ width: '90px', height:'90px', marginRight:'2.5vh'}} >
-              <CienciaDatosSVG />
+              <EducacionExtendidaSVG />
             </div>
             </a>
           </Link>

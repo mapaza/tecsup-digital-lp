@@ -113,7 +113,9 @@ function FirstSection() {
               delay: 1
             }}
           >
-            Eduverso
+          Potencia el aprendizaje virtual de tu empresa. <br/>
+          Bienvenido a la era Digital.
+
           </Title>
           <Subtitle
             initial={{ opacity: 0 }}
@@ -122,7 +124,9 @@ function FirstSection() {
               ease: "easeOut",
               delay: 1.3
             }}>
-            Menos del 1% de la información de una empresa es analizada y convertida en beneficios. ¿Por que no hacemos algo al respecto? Toma la delantera con tu empresa y obtén innumerables beneficios al transformarla digitalmente
+           Diferénciate del resto transformando tu información en soluciones. 
+           
+           Analiza y destaca.
           </Subtitle>
           <div className="button-circle-container">
             <Link to="/video">

@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Route, useLocation } from 'react-router-dom'
-import { Container, } from './styles'
-import { Detail, SubService } from '../styles'
+import { Container } from './styles'
+import { Detail, SubService, Subtitle } from '../styles'
 import HeaderService from '../HeaderService'
 import { useRef } from 'react'
 import useSmoothScrolling from '../../../hooks/useSmoothScrolling'
@@ -18,27 +18,46 @@ const TransformacionDigital = () => {
   return (
     <Container ref={wrapperRef}>
       <HeaderService
-        title="Transformación Digital"
-        subtitle="En un mundo digitalizado, los cambios tecnológicos deben ir ligados a la estrategia y objetivos de la empresa. Con la transformación digital harás más que tener presencia en línea, entérate más con nuestros servicios."
+        title="Capacitación y entrenamiento inmersivo"
+        subtitle=""
       />
       <Detail>
         <div className="left">
+       
+          
           <SubService>
+          <p className='description'>
+          Lleva la capacitación de tus colaboradores más allá de las aulas a través de una educación extendida que contempla:
+          </p>
             <p className="number">01</p>
-            <p className="title">Diagnostico Digital</p>
+            <p className="title"> SIMULADORES BASADOS EN LA WEB</p>
             <p>
-              Descubrimos juntos el grado de madurez digital de tu empresa, para organizarnos y planificar la mejor transformación que brinde valor a tu empresa.
+            Rompe las barreras de la presencialidad acercando a tus colaboradores a aprendizajes  virtuales a medida de acuerdo a las necesidades de tu organización. El objetivo es crear laboratorios educativos multidisciplinarios que puedan ser aprovechados para vivir una experiencia real
             </p>
+            <br/>
+            <p>Podrás Desarrollar:</p>
+            <ul>
+              <li>
+                Simuladores
+              </li>
+              <li>
+                Inducciones
+              </li>
+              <li>
+                Tareas de varios pasos, etc.
+              </li>
+            </ul>
           </SubService>
           <SubService>
             <p className="number">02</p>
-            <p className="title">Competencias Digitales</p>
-            <p>Analizamos aquellas competencias digitales con las que cuentes, y juntos nos enfocamos en reforzar la mejora y el desarrollo de nuevas competencias que harán aún mejor a tu empresa.</p>
+            <p className="title">ESCENARIOS 3D INTERACTIVOS</p>
+            <p>Potencia el aprendizaje de tus colaboradores utilizando escenarios virtuales a medida que les permitirán llevar la educación digital a una experiencia 100% real e inmersiva de fácil recordación y de mayor aprovechamiento a través de diferentes dispositivos móviles.</p>
           </SubService>
           <SubService>
             <p className="number">03</p>
-            <p className="title">Cultura de la Información</p>
-            <p>Juntos buscamos y seleccionamos las mejores tecnologías que le brindarán ese valor agregado que necesita tu negocio, basándonos en tus necesidades, y en toda la información que ya cuentas.</p>
+            <p className="title">LABORATORIOS REMOTOS</p>
+            <p>Ten la posibilidad de desarrollar un aprendizaje real y 100% práctico desde donde estés a través del desarrollo tecnológico e innovador de plataformas de aprendizaje que permitirán la manipulación de equipos o sistemas a través de un computador, tablet o smartphone.
+</p>
           </SubService>
         </div>
         <img

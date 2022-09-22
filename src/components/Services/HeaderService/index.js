@@ -8,6 +8,8 @@ import DigitalizacionProcesosSVG from './DigitalizacionProcesosSVG';
 import GestionConocimientoSVG from './GestionConocimientoSVG';
 import { Container, Content, IconsLayer } from './styles';
 import { useCallback } from 'react';
+import MonitoreoCondicionesSVG from './MonitoreoCondicionesSVG';
+import EducacionExtendidaSVG from './EducacionExtendidaSVG';
 // import { useLoader } from 'react-three-fiber';
 
 
@@ -46,25 +48,26 @@ function HeaderService({ title, subtitle }) {
           </Subtitle>
         </div>
         <IconsLayer>
-          <Link to="/servicios/transformacion-digital">
+          <Link to="/servicios/capacitacion-y-entrenamiento-inmersivo">
             
-            <div className={`circle ${isActive("/servicios/transformacion-digital") ? "active" : ""}`}  style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+            <div className={`circle ${isActive("/servicios/capacitacion-y-entrenamiento-inmersivo") ? "active" : ""}`}  style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
               <TransformacionDigitalSVG />
             </div>
           </Link>
-          <Link to="/servicios/gestion-del-conocimiento">
-            <div className={`circle ${isActive("/servicios/gestion-del-conocimiento") ? "active" : ""}` } style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+          <Link to="/servicios/instructivos-para-operaciones-y-mantenimiento">
+            <div className={`circle ${isActive("//servicios/instructivos-para-operaciones-y-mantenimiento") ? "active" : ""}` } style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
               <GestionConocimientoSVG />
             </div>
           </Link>
-          <Link to="/servicios/digitalizacion-de-procesos">
-            <div className={`circle ${isActive("/servicios/digitalizacion-de-procesos") ? "active" : ""}`} style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+          <Link to="/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos">
+            <div className={`circle ${isActive("/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos") ? "active" : ""}`} style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+             {/*  <MonitoreoCondicionesSVG /> */}
               <DigitalizacionProcesosSVG />
             </div>
           </Link>
-          <Link to="/servicios/analitica-y-ciencia-de-datos">
-            <div className={`circle ${isActive("/servicios/analitica-y-ciencia-de-datos") ? "active" : ""}`}style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
-              <CienciaDatosSVG />
+          <Link to="/servicios/educación-extendida">
+            <div className={`circle ${isActive("/servicios/educación-extendida") ? "active" : ""}`}style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+              <EducacionExtendidaSVG/>
             </div>
           </Link>
         </IconsLayer>

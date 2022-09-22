@@ -1,5 +1,6 @@
 // import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { motion } from 'framer-motion'
 
 export const Container = styled.div`
   position: relative;
@@ -48,6 +49,7 @@ export const Detail = styled.div`
 
 
 export const SubService = styled.div`
+
   padding:  0vw 6vw 5vw;
   width: 100%;
   position: relative;
@@ -72,7 +74,7 @@ export const SubService = styled.div`
     font-size: 32px;
     line-height: 38px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom:3vh;
 
     @media only screen and (min-width : 992px) {
       font-size: 36px;
@@ -88,10 +90,37 @@ export const SubService = styled.div`
     font-weight: 300;
 
     @media only screen and (min-width : 992px) {
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 3vh;
+      line-height: 4vh;
     }
+  }
+  ul{
+    font-size: 3vh;
+    line-height: 4vh;
   }
  
  
 `;
+
+export const Subtitle = styled(motion.p)`
+  width: 90%; 
+  font-weight: 300; 
+  color: white; 
+  margin-top: 1vw;
+  font-size: 100%; 
+  line-height: 130%;
+
+
+   /* Medium Devices, Desktops */
+   @media only screen and (min-width : 992px) {
+    font-size: 4vh; 
+    line-height: 5vh;
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+    font-size: 3.2vh; 
+    line-height: 4.2vh;
+  }
+
+`

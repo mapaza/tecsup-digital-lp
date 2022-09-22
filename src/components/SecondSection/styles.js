@@ -41,8 +41,8 @@ export const Subtitle = styled(motion.p)`
 
   /* Large Devices, Wide Screens */
   @media only screen and (min-width : 1200px) {
-    font-size: 18px; 
-    line-height: 24px;
+    font-size: 2.8vh; 
+    line-height: 4vh;
   }
 `
 

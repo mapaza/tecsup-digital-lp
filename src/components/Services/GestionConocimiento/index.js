@@ -4,7 +4,7 @@ import useSmoothScrolling from '../../../hooks/useSmoothScrolling';
 import HeaderService from '../HeaderService';
 import ShowMore from '../ShowMore';
 // import { Route, useLocation } from 'react-router-dom'
-import { Container, } from './styles'
+import { Container } from './styles'
 import { Detail, SubService } from '../styles'
 
 import image from '../../../assets/images/gestion_conocimiento.png'
@@ -18,23 +18,40 @@ const AnalisisCienciaDatos = () => {
   return (
     <Container ref={wrapperRef}>
       <HeaderService
-        title="Gestión del conocimiento"
-        subtitle="Con nuestra ayuda realiza el diseño de estrategias, procesos, estructuras y sistemas que permita a tu organización hacer uso de lo que conoce, para obtener un mayor beneficio de los datos."
+        title="Instructivos para operaciones y mantenimiento"
+        subtitle=""
       />
       <Detail>
         <div className="left">
           <SubService>
-            <p className="number">01</p>
-            <p className="title">Plataforma de gestión del conocimiento industrial 4.0</p>
-            <p>
-              Es la primera plataforma que une los recursos digitales planos (documentos, planos, imágenes) con elementos interactivos en tercera dimensión, la cual está diseñado para que se pueda transmitir de manera más efectiva el conocimiento y así mejorar las habilidades y llevarlas a la práctica de manera rápida.
-            </p>
+            
+            <p className='description'>
+            Desarrolla los instructivos que necesitas en tu organización para ayudar a mejorar las operaciones o mantenimientos internos. <br/> 
+Obtén guías a través de realidad aumentada y mixta.
+          </p>
+           
+            <br/>
+            <p>Podrás Desarrollar:</p>
+            <br/>
+            <ul>
+              <li>
+              <strong>Tutor Digital:</strong> Aplicativo que utiliza la RA y RM para entregar elementos altamente visuales e interactivos para presentar información digital relevante dentro de un contexto físico real.
 
-            <ShowMore to="/servicios/plataforma-de-gestión-del-conocimiento-industrial-4-0">
+              </li>
+              <br/>
+              <li>
+              <strong>Asistencia Remota:</strong> Desarrollo de software de acceso remoto para dar al especialista/experto acceso instantáneo al dispositivo remoto desde cualquier lugar y en cualquier momento.
+
+              </li>
+              
+            </ul>
+
+            {/*
+             <ShowMore to="/servicios/plataforma-de-gestión-del-conocimiento-industrial-4-0">
               Ver Más
-            </ShowMore>
+            </ShowMore> */}
           </SubService>
-          <SubService>
+         {/*  <SubService>
             <p className="number">02</p>
             <p className="title">Instructivos de mantenimiento con realidad aumentada</p>
             <p>
@@ -43,7 +60,7 @@ const AnalisisCienciaDatos = () => {
             <ShowMore to='/servicios/instructivos-de-mantenimiento-con-realidad-aumentada' >
               Ver Más
             </ShowMore>
-          </SubService>
+          </SubService> */}
         </div>
         <img className="img" alt="análisis y ciencia de datos" src={image} />
       </Detail>

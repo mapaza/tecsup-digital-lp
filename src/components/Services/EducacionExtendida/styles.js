@@ -112,14 +112,14 @@ export const Content = styled.div`
         color: #30a0cc;
         margin-bottom: 1vw;
         
-        font-weight: 200;
+        font-weight: bolder;
         text-transform: uppercase;
         font-size: 100%;
         line-height: 140%;
         
         @media only screen and (min-width : 992px) {
           line-height: 1.6vw;
-          font-size: 1.3vw;
+          font-size: 3.8vh;
         }
 
       }
@@ -130,8 +130,8 @@ export const Content = styled.div`
         line-height: 140%;
         
         @media only screen and (min-width : 992px) {
-          line-height: 1.8vw;
-          font-size: 1.5vw;
+          line-height: 5vh;
+          font-size: 3.5vh;
         }
       }
     }
@@ -211,11 +211,12 @@ export const Content = styled.div`
 
   .about{
       width: 100%;
-      padding-bottom: 80px;
+    
       color: white;
       display: flex;
       flex-direction: column;
-      margin-left: auto;
+      margin-left: 0;
+      margin-top: 5vh;
 
       @media only screen and (min-width : 992px) {
         width: 60vw;
