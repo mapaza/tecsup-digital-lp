@@ -14,11 +14,36 @@ export const Title = styled(motion.p)`
     /* -webkit-text-stroke: 1px #fff; */
     /* -webkit-text-fill-color: transparent; */
   }
+  
+  /* Galaxy Fold */ 
+  @media only screen and (min-width : 280px) {
+    font-size: 4vh; 
+    line-height: 5vh;
+  }
+
+  /* Custom, iPhone Retina */ 
+  @media only screen and (min-width : 320px) {
+    font-size: 5vh; 
+    line-height: 6vh;
+  }
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (min-width : 480px) {
+    font-size: 5vh; 
+    line-height: 6vh;
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    font-size: 6vh; 
+    line-height: 7vh;
+  }
+
 
   /* Medium Devices, Desktops */
   @media only screen and (min-width : 992px) {
-    font-size: 9vh; 
-    line-height: 11vh;
+    font-size: 7vh; 
+    line-height: 8vh;
   }
 
   /* Large Devices, Wide Screens */
@@ -36,6 +61,30 @@ export const Subtitle = styled(motion.p)`
   margin-top: 1vw;
   font-size: 100%; 
   line-height: 130%;
+
+  /* Galaxy Fold */ 
+  @media only screen and (min-width : 280px) {
+    font-size: 3vh; 
+    line-height: 4vh;
+  }
+
+  /* Custom, iPhone Retina, Iphone SE*/ 
+  @media only screen and (min-width : 320px) {
+    font-size: 3vh; 
+    line-height: 4vh;
+  }
+
+  /* Extra Small Devices, Phones, Surface Duo */ 
+  @media only screen and (min-width : 480px) {
+    font-size: 3vh; 
+    line-height: 4vh;
+  }
+
+  /* Small Devices, Tablets, IPAD Air */
+  @media only screen and (min-width : 768px) {
+    font-size: 3vh; 
+    line-height: 4vh;
+  }
 
 
    /* Medium Devices, Desktops */
