@@ -421,6 +421,20 @@ export const IconsLayer = styled.div`
       font-size: 1.6vh;
       width: 10vh;
     }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      font-size: 2.6vh;
+      width: 20vh;
+      bottom: -15vh;
+   }
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      font-size: 2.6vh;
+      width: 20vh;
+      bottom: -15vh;
+    }
   
   
   }
@@ -498,6 +512,20 @@ export const IconsLayer = styled.div`
       font-size: 1.6vh;
       width: 10vh;
     }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      font-size: 2.6vh;
+      width: 20vh;
+      bottom: -18vh;
+   }
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      font-size: 2.6vh;
+      width: 20vh;
+      bottom: -18vh;
+    }
   
   
     
@@ -546,16 +574,16 @@ export const IconsLayer = styled.div`
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-      font-size: 1.6vh;
-      width: 10vh;
-      bottom: -19vh;
+      font-size: 2.6vh;
+      width: 20vh;
+      bottom: -21vh;
    }
   
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-      font-size: 1.6vh;
+      font-size: 2.6vh;
       width: 20vh;
-      bottom: -12vh;
+      bottom: -21vh;
     }
   
    
@@ -600,7 +628,20 @@ export const IconsLayer = styled.div`
       font-size: 1.6vh;
       width: 10vh;
     }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      font-size: 2.6vh;
+      width: 20vh;
+      bottom: -12vh;
+   }
   
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      font-size: 2.6vh;
+      width: 20vh;
+      bottom: -12vh;
+    }
    
   }
 

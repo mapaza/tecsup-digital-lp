@@ -68,6 +68,8 @@ export const Nav = styled.nav`
     padding: 0px 20px ;
     font-weight: 300;
     font-size: 18px;
+
+    
   }
 `
 

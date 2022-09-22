@@ -50,23 +50,23 @@ function HeaderService({ title, subtitle }) {
         <IconsLayer>
           <Link to="/servicios/capacitacion-y-entrenamiento-inmersivo">
             
-            <div className={`circle ${isActive("/servicios/capacitacion-y-entrenamiento-inmersivo") ? "active" : ""}`}  style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+            <div className={`circle ${isActive("/servicios/capacitacion-y-entrenamiento-inmersivo") ? "active" : ""}`}   >
               <TransformacionDigitalSVG />
             </div>
           </Link>
           <Link to="/servicios/instructivos-para-operaciones-y-mantenimiento">
-            <div className={`circle ${isActive("/servicios/instructivos-para-operaciones-y-mantenimiento") ? "active" : ""}` } style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+            <div className={`circle ${isActive("/servicios/instructivos-para-operaciones-y-mantenimiento") ? "active" : ""}` }  >
               <GestionConocimientoSVG />
             </div>
           </Link>
           <Link to="/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos">
-            <div className={`circle ${isActive("/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos") ? "active" : ""}`} style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+            <div className={`circle ${isActive("/servicios/monitoreo-de-condiciones-y-visualización-de-datos-operativos") ? "active" : ""}`} >
              {/*  <MonitoreoCondicionesSVG /> */}
               <DigitalizacionProcesosSVG />
             </div>
           </Link>
           <Link to="/servicios/educación-extendida">
-            <div className={`circle ${isActive("/servicios/educación-extendida") ? "active" : ""}`}style={{border: '3px solid white', width: '90px', height:'90px', marginRight:'2.5vh'}} >
+            <div className={`circle ${isActive("/servicios/educación-extendida") ? "active" : ""}`} >
               <EducacionExtendidaSVG/>
             </div>
           </Link>
