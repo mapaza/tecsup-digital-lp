@@ -86,8 +86,20 @@ function Contact() {
       return (
         <>
           <ContactForm className="contact-form" textButton={q ? "Solicitar Demostración" : "Enviar"} onSubmit={onSubmit} />
-
           <Location>
+        <div className="title">Contáctanos por Whatsapp</div>
+       <img  width="30%" src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAABlBMVEUAAAD///+l2Z/dAAABi0lEQVRoge3aMZKDMAyF4Z9xQckROApHw0fjKBzBJQXD20KCkMxmssWaZXakBgJfp4ksW6CfRCFYsGA7W/BIsh/diqRtf0ywOzFL3Jzsmkmi18YgyV4Hu4JNwDgnMSyNcreiud0YCtAHu5xBIxWAYPdn7cZYkj7lNFgFttc3K2lHst6VwWA1mMdrfdsj2H3YKYCDnZ8Hq868vnl73CgDOtrjPtglTJJKo9xL5m2TIk2dZFkLdhdmqw2QZGnsVsDr2zifd5TBqjEJOin38sZMq689nfRoCYJVZx7+/0mS1bfkxS7YXdiC98sr0OrREkzdyniqb8GqMklSBhiWRipJ9Evj+8yXA8lg9VgB+hVNT8nyg+Jgt2LWgvlRWAY0g9W3Xgp2ATsFtOebAqOCXcLO86zJu2I/kHxZ64PdgFke7dxyszTO3+Q0WF02cYy97M2RvqdkBbuG0doI2JrmYjjYfZls4CJJK++mY8F+n+31TRONfTUBvpdRsIuYhw8f88cPjYL9GftBBAv2/9kX5WYhr0zKcMsAAAAASUVORK5CYII="/>
+       
+       <Campus>
+          <div className="campus"><strong>Andy Barreda</strong></div>
+         
+          <div className="phone">
+            <span>Telefono: </span>
+            +51 993 012 451
+        </div>
+        </Campus>
+      </Location>
+          {/* <Location>
             <div className="title">Sedes</div>
 
             <Campus>
@@ -124,7 +136,7 @@ function Contact() {
                   (044) 485420 anexos: 6000/6503/6506
               </div>
             </Campus>
-          </Location>
+          </Location> */}
 
         </>
       )

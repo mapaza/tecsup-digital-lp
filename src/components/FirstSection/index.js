@@ -10,7 +10,9 @@ import { useTransform, useViewportScroll } from 'framer-motion'
 import { Title, Subtitle, OverlayBody, StickyContainer, Container, ScrollDown, Model, VideoH } from './styles'
 // import useWrapperScroll from '../SectionsWrapper/useWrapperScroll'
 import ButtonCircle from '../ButtonCircle'
-import { Link } from 'react-router-dom'
+import { useCallback } from 'react'
+import { useHistory, useLocation, Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 // const bounceTransition = {
@@ -97,6 +99,20 @@ function FirstSection() {
   const canAnimate = true
  
 
+  const history = useHistory()
+  const location = useLocation()
+
+  const handleClick = useCallback((e, path) => {
+    // console.log(location);
+    if (location.pathname !== "/") {
+      history.push(`/`);
+    } else {
+      const el = document.querySelector(path);
+      window.scrollTo(0, el.offsetTop);
+    }
+
+  }, [history, location])
+
   return (
     <Container id="first">
       <StickyContainer>
@@ -128,12 +144,17 @@ function FirstSection() {
            
            Analiza y destaca.
           </Subtitle>
-          <div className="button-circle-container">
-            <Link to="/video">
+          <div className="button-circle-container" onClick={(e) => handleClick(e, '#second')}>
+          
               <ButtonCircle canAnimate={canAnimate} >
                 COMENZAR AHORA
               </ButtonCircle>
-            </Link>
+            
+           {/*  <Link to="/video">
+              <ButtonCircle canAnimate={canAnimate} >
+                COMENZAR AHORA
+              </ButtonCircle>
+            </Link> */}
           </div>
         </OverlayBody>
         {/* <div style={{ width: `${widthModel}%`, height: '100vh', transition: '0.1s width' }}> */}

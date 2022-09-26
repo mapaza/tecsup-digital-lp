@@ -85,12 +85,18 @@ export const Location = styled.div`
     line-height: 48px;
     font-weight: 700;
     margin-bottom: 1vw;
+    text-align:center;
   }
+  img{
+    margin: 2% 35%;
+  }
+  
 `;
 
 export const Campus = styled.div`
   width: 100%;
   margin-bottom: 1vw;
+  text-align:center;
 
   .campus {
     font-weight: 500;

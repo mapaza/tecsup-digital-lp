@@ -17,13 +17,66 @@ function Contact({ onSubmit, textButton, ...props }) {
   const { register, handleSubmit, errors } = useForm();
   const [cities, setCities] = useState([]);
   // console.log(getValues());
+  // var city_list = ['Cusco','Chimbote','Huancayo','Tacna','Chiclayo','Iquitos','Huánuco','Ica','Callao']
 
+  var city_list = 
+  [
+  {
+    idCiudad:1,
+    nombreCiudad:'Arequipa'
+  },
+  {
+    idCiudad:2,
+    nombreCiudad:'Lima'
+  },
+  {
+    idCiudad:3,
+    nombreCiudad:'Trujillo'
+  },
+  {
+    idCiudad:4,
+    nombreCiudad:'Cusco'
+  },
+  {
+    idCiudad:5,
+    nombreCiudad:'Chimbote'
+  },
+  {
+    idCiudad:5,
+    nombreCiudad:'Huancayo'
+  },
+  {
+    idCiudad:7,
+    nombreCiudad:'Tacna'
+  },
+  {
+    idCiudad:8,
+    nombreCiudad:'Chiclayo'
+  },
+  {
+    idCiudad:9,
+    nombreCiudad:'Iquitos'
+  },
+  {
+    idCiudad:10,
+    nombreCiudad:'Huánuco'
+  },
+  {
+    idCiudad:11,
+    nombreCiudad:'Ica'
+  },
+  {
+    idCiudad:12,
+    nombreCiudad:'Callao'
+  }
+]
   useEffect(() => {
-    async function callApi() {
+   /*  async function callApi() {
       const data = await getCities();
       setCities(data);
     }
-    callApi();
+    callApi(); */
+    setCities(city_list)
   }, [])
 
   return (
@@ -37,7 +90,16 @@ function Contact({ onSubmit, textButton, ...props }) {
         <input ref={register({ required: true })} placeholder="Apellidos" autoComplete="off" type="text" name="apellidos" id="apellidos" className="input" />
       </div>
       <div className="inline">
-       
+      <select ref={register({ required: true })} placeholder="Ciudad" name="ciudad" id="ciudad" className="input">
+          {cities.map((city) => (
+            <option
+              key={city.idCiudad}
+              value={city.idCiudad}
+            >
+              {city.nombreCiudad}
+            </option>
+          ))}
+        </select>
         <input ref={register({ required: true })} placeholder="Compañia" autoComplete="off" type="text" name="compania" id="compania" className="input" />
       </div>
       <div className="inline">
