@@ -19,6 +19,7 @@ function makeNav(color = "white") {
 
   if (color === "white") {
     navbar.style.color = "white";
+    navbar.style.background = "black";
     circle.style.background = "white"
     circle.style.color = "black"
     contact.style.color = "white"
@@ -26,6 +27,7 @@ function makeNav(color = "white") {
     img.src="https://res.cloudinary.com/tecdigital/image/upload/v1663714524/logo-eduverso-blanco_hlrio1.png"
   } else {
     navbar.style.color = "black";
+    navbar.style.background = "white";
     circle.style.background = "rgba(0,0,0,1)"
     circle.style.color = "white"
     contact.style.color = "black"

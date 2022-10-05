@@ -73,6 +73,7 @@ if(document.querySelector("#navbar")){
   navbar = document.querySelector("#navbar")
 }
 navbar.style.color = "white"; 
+navbar.style.background = "black";
   
 if(document.querySelector("#navbar .circle")){
   circle =document.querySelector("#navbar .circle")

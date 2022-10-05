@@ -78,7 +78,7 @@ export default function App() {
               <Route path="/casos" component={Cases} />
               <Route path="/contacto" component={Contact} />
               <Route path="/video" component={VideoPlayer} />
-              <Route component={NotFound} />
+            {/*   <Route component={NotFound} /> */}
             </Switch>
             <Loader />
             <GlobalStyles />

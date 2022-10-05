@@ -146,15 +146,15 @@ function FirstSection() {
           </Subtitle>
           <div className="button-circle-container" onClick={(e) => handleClick(e, '#second')}>
           
-              <ButtonCircle canAnimate={canAnimate} >
+              {/* <ButtonCircle canAnimate={canAnimate} >
                 COMENZAR AHORA
-              </ButtonCircle>
+              </ButtonCircle> */}
             
-           {/*  <Link to="/video">
+           <Link to="/video">
               <ButtonCircle canAnimate={canAnimate} >
                 COMENZAR AHORA
               </ButtonCircle>
-            </Link> */}
+            </Link>
           </div>
         </OverlayBody>
         {/* <div style={{ width: `${widthModel}%`, height: '100vh', transition: '0.1s width' }}> */}

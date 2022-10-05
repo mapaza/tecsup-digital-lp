@@ -36,6 +36,7 @@ function Header() {
       const contact = document.querySelector("#navbar .contact");
       const img = document.querySelector("#navbar img");
       navbar.style.color = "white";
+      navbar.style.background = "black";
       circle.style.background = "white"
       contact.style.color = "white"
       circle.style.color = "black"

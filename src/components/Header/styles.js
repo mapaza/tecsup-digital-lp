@@ -12,7 +12,9 @@ export const Container = styled.header`
   color: white;
   z-index: 100;
   padding: 0px 5%;
-  transition: color 0.4s ease;
+  background: black;
+  transition: color 1s ease;
+  transition: background 0.4s ease;
   font-size: 2.8vh;
   img {
     transition: filter 0.4s ease;
